@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <h1>Shopify Backend Challenge</h1>
+        <h3>Right-click HTML page, click inspect, then click on Console tab to see outputs/responses</h3>
+        <input id="getItemListInput" type="button" value="Get Item List" onclick="getItemList();" /><br>
+        <input id="exportCSVInput" type="button" value="Export Items to CSV" onclick="exportCSV();" /><br>
+
+        <h4>Add an Item (requires at least a name that is not empty/just spaces)</h4>
+        <form action="javascript:addItem(document.getElementById('addName').value, document.getElementById('addDescription').value)">
+            <label for="addName">Name:</label><br>
+            <input type="text" id="addName" name="addName" value=""><br>
+            <label for="addDescription">Description:</label><br>
+            <input type="text" id="addDescription" name="addDescription" value=""><br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <h4>Edit an Item (requires an ID)</h4>
+        <form action="javascript:updateItem(document.getElementById('updateId').value, document.getElementById('updateName').value, document.getElementById('updateDescription').value)">
+            <label for="updateId">Item ID:</label><br>
+            <input type="text" id="updateId" name="updateId" value=""><br>
+            <label for="updateName">Name:</label><br>
+            <input type="text" id="updateName" name="updateName" value=""><br>
+            <label for="updateDescription">Description:</label><br>
+            <input type="text" id="updateDescription" name="updateDescription" value=""><br><br>
+            <input type="submit" value="Submit">
+        </form> 
+
+        <h4>Delete an Item (requires an ID)</h4>
+        <form action="javascript:deleteItem(document.getElementById('deleteId').value)">
+            <label for="deleteId">Item ID:</label><br>
+            <input type="text" id="deleteId" name="deleteId" value=""><br>
+            <input type="submit" value="Submit">
+        </form> 
+
+    </body>
+    <script type="text/javascript">
+        var apiUrl = 'http://localhost:5000/v1/item';
+        var exportAPIUrl = 'http://localhost:5000/v1/item/csv';
+
+        function addItem(name, description) {
+            let item = {
+                description: ""
+            };
+            if (name.replace(/\s/g, '').length != 0) {
+                item["name"] = name
+            }
+            if (description.replace(/\s/g, '').length != 0) {
+                item["description"] = description
+            }
+            const options = {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+                body: JSON.stringify(item),
+            };
+
+            fetch(apiUrl, options).then(response => {
+                return response.json();
+            }).then(data => {
+                console.log(data);
+            }).catch(err => {
+                console.log("Adding Item created error: " + err)
+            });
+        }
+
+        function updateItem(itemId, name, description) {
+            let item = {}
+            if (name.replace(/\s/g, '').length != 0) {
+                item["name"] = name
+            }   
+            if (description.replace(/\s/g, '').length != 0) {
+                item["description"] = description
+            }
+            const options = {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+                body: JSON.stringify(item),
+            };
+
+            fetch(apiUrl + "/" + itemId.toString(), options).then(response => {
+                return response.json();
+            }).then(data => {
+                console.log(data);
+            }).catch(err => {
+                console.log("Updating item created error: " + err)
+            });
+        }
+
+        function deleteItem(itemId) {
+            const options = {
+                method: 'DELETE'
+            };
+
+            fetch(apiUrl + "/" + itemId.toString(), options).then(response => {
+                return response.json();
+            }).then(data => {
+                console.log(data);
+            }).catch(err => {
+                console.log("Deleting item created error: " + err)
+            });
+        }
+
+        function getItemList() {
+            fetch(apiUrl).then(response => {
+                return response.json();
+            }).then(data => {
+                console.log("Item List fetched successfully: ");
+                console.log(data);
+            }).catch(err => {
+                console.log("Get Item List created error: " + err)
+            });
+        }
+
+        function exportCSV() {
+            fetch(exportAPIUrl).then(response => {
+                return response.json();
+            }).then(data => {
+                console.log(data);
+            }).catch(err => {
+                console.log("Get Item List created error: " + err)
+            });
+        }
+    </script>
+</html>
