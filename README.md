@@ -10,9 +10,9 @@ Pre-requisites:
 3. Navigate to project using ```cd``` command (i.e. ```cd Downloads\challenge-main```)  
 
 How to Install Python from Command Prompt (make sure you have ```cd``` to project folder)  
-2.  Enter ```python3```. This will open Microsoft Store. Click 'Get' to download/install Python 3.9  
-3.  To verify that Python 3.9 has been installed, enter ```python3```  
-4.  To exit python environment, enter ```exit()```  
+1.  Enter ```python3```. This will open Microsoft Store. Click 'Get' to download/install Python 3.9  
+2.  To verify that Python 3.9 has been installed, enter ```python3```  
+3.  To exit python environment, enter ```exit()```  
 
 How to set up application from Command Prompt (make sure you have ```cd``` to project folder)  
 1. Enter ```pip3 install -r requirements.txt```  
