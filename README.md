@@ -1,4 +1,4 @@
-# Shopify Backend Application (with CSV Export Feature)
+# Backend Application (with CSV Export Feature)
 
 Welcome to my application. This contains the ability to add, edit, and delete items. Additionally, it has the ability to get a list of items, as well as export it to a local CSV file. Below are the set-up guides.
 
