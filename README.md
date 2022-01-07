@@ -14,7 +14,7 @@ How to set up application from Command Prompt
 2. Run ```python3 -m venv .venv``` to create virtual environment
 3. Run ```.venv\Scripts\activate``` to activate environment
 4. Run ```pip3 install -r requirements.txt```
-5. Feel free to run 'python3 -m pytest tests' to execute tests here
+5. Feel free to run ```python3 -m pytest tests``` to execute tests here
 6. Run ```.venv\Scripts\deactivate``` to exit
 7. Run ```python3 application.py``` to start server
 8. Open up view.html (for me it was located at Documents\GitHub\shopify\view.html) in a browser and have fun!
