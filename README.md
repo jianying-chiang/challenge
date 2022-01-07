@@ -10,7 +10,7 @@ How to Install Python
 4.  To exit python environment, enter ```exit()```
 
 How to set up application from Command Prompt
-1. cd to the my application (for me it is located at Downloads\GitHub\challenge-main\challenge-main)
+1. Download and cd to the my application (for me it is located at Downloads\GitHub\challenge-main\challenge-main)
 2. Run ```python3 -m venv .venv``` to create virtual environment
 3. Run ```.venv\Scripts\activate``` to activate environment
 4. Run ```pip3 install -r requirements.txt```
