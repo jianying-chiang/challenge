@@ -10,17 +10,17 @@ How to Install Python
 4.  To exit python environment, enter ```exit()```
 
 How to set up application from Command Prompt
-1. cd to the my application (for me it is located at Downloads\GitHub\shopify-main\shopify-main)
+1. cd to the my application (for me it is located at Downloads\GitHub\challenge-main\challenge-main)
 2. Run ```python3 -m venv .venv``` to create virtual environment
 3. Run ```.venv\Scripts\activate``` to activate environment
 4. Run ```pip3 install -r requirements.txt```
 5. Feel free to run ```python3 -m pytest tests``` to execute tests here
 6. Run ```.venv\Scripts\deactivate``` to exit
 7. Run ```python3 application.py``` to start server
-8. Open up view.html (for me it was located at Documents\GitHub\shopify\view.html) in a browser and have fun!
+8. Open up view.html (for me it was located at Documents\GitHub\challenge\view.html) in a browser and have fun!
 
 How to run E2E and unit tests from Command Prompt:
-1. cd  to the my application (for me it is located at Downloads\GitHub\shopify-main\shopify-main)
+1. cd  to the my application (for me it is located at Downloads\GitHub\challenge-main\challenge-main)
 2. Run ```.venv\Scripts\activate```
 3. Run ```python3 -m pytest tests```
 
@@ -33,8 +33,8 @@ How to Install Python
 2.  Run the following for downloading/running tests/starting server: 
 ``` 
 $ sudo apt-get install git python3-virtualenv python3-pip  
-$ git clone https://github.com/jianying-chiang/shopify.git  
-$ cd ./shopify  
+$ git clone https://github.com/jianying-chiang/challenge.git  
+$ cd ./challenge  
 $ virtualenv --python=/usr/bin/python3 venv  
 $ source ./venv/bin/activate  
 $ pip3 install -r requirements.txt  
