@@ -87,4 +87,4 @@ class ItemService(object):
         items = self.item_dao.get_all(session)
         filename = export(items)
 
-        return "Successfully exported {} items to CSV file: {}".format(len(items), filename)
+        return "Successfully exported {} items to a local CSV file: {}".format(len(items), filename)

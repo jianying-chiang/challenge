@@ -42,4 +42,4 @@ def export(items: List[Item]) -> str:
         print('Exception: ', filename)
         raise e
         
-    return Path(filename).absolute()
+    return Path(filename)
