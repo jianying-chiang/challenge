@@ -5,7 +5,7 @@ Welcome to my application. This contains the ability to add, edit, and delete it
 # Guide (Windows/Mac)
 
 Pre-requisites:
-1. Feel free to download the project as a ZIP and extract it. (For cloning, run ```git clone https://github.com/jianying-chiang/challenge.git```)  
+1. Feel free to download the project as a ZIP and extract it. (For cloning, run ```git clone https://github.com/jianying-chiang/challenge.git``` for Mac as it comes with git)  
 2. Open up Command Prompt (CMD)  
 3. Navigate to project using ```cd``` command (i.e. ```cd Downloads\challenge-main```)  
 
