@@ -22,7 +22,7 @@ How to set up application from Command Prompt
 How to run E2E and unit tests from Command Prompt:
 1. cd  to the my application (for me it is located at Downloads\GitHub\shopify-main\shopify-main)
 2. Run '.venv\Scripts\activate'
-2. Run 'python3 -m pytest tests'
+3. Run 'python3 -m pytest tests'
 
 Notes:
 There are some instances where Command Prompt or the server may be unresponsive/stuck. Use CTRL-C to refresh and/or re-execute the command in the command prompt.
@@ -30,13 +30,13 @@ There are some instances where Command Prompt or the server may be unresponsive/
 # Guide (Mac)
 How to Install Python
 1.  Open Terminal
-2.  Run the following for downloading/running tests/starting server:
-$ sudo apt-get install git python3-virtualenv python3-pip
-$ git clone https://github.com/jianying-chiang/shopify.git
-$ cd ./shopify
-$ virtualenv --python=/usr/bin/python3 venv
-$ source ./venv/bin/activate
-$ pip3 install -r requirements.txt
-$ python3 -m pytest tests
-$ python3 application.py
+2.  Run the following for downloading/running tests/starting server:  
+$ sudo apt-get install git python3-virtualenv python3-pip  
+$ git clone https://github.com/jianying-chiang/shopify.git  
+$ cd ./shopify  
+$ virtualenv --python=/usr/bin/python3 venv  
+$ source ./venv/bin/activate  
+$ pip3 install -r requirements.txt  
+$ python3 -m pytest tests  
+$ python3 application.py  
 3. Open up view.html in a browser and have fun
