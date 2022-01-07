@@ -14,9 +14,6 @@ def create_app(test: bool = False):
     app = Flask(__name__, instance_relative_config=False)
     if test:
         app.config.from_object("config.TestConfig")
-        test_db = Path(app.config['SQLALCHEMY_DATABASE_URI'])
-        if test_db.exists():
-            test_db.unlink()
         app.config['SQLALCHEMY_DATABASE_URI']
     else:
         app.config.from_object("config.LocalConfig")
