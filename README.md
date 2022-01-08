@@ -4,17 +4,18 @@ Welcome to my application. This contains the ability to add, edit, and delete it
 
 # Backend Folder Structure:
 challenge-main  
-│   application.py (App entry point)  
-│   config.py (configuration for the app, i.e. db link)  
+│   application.py (App entry point file)  
+│   config.py (configuration file for the app, i.e. db link)  
 │  
-└───application (main folder)  
+└───application (main)
 │   │  
 │   └───api (Handles all incoming API requests)  
 │   └───service (Handles all business/service logic)  
 │   └───dao (Handles all DB-related operations/interactions)  
 │   └───model (contains table schema, i.e. Item)  
-│   └───util (Utility/Helper functions)  
-└───tests  
+│   └───util (Utility/Helper functions)
+│  
+└───tests
 │   │  
 │   └───e2e (End to End tests. Calls APIs with different params/JSONs)  
 │   └───service (Unit tests. Checks that all utility/helper functions are working as expected)  
