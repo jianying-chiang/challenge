@@ -18,7 +18,7 @@ How to set up application from Command Prompt (make sure you have ```cd``` to pr
 1. Enter ```pip3 install -r requirements.txt```  
 2. Feel free to run ```python3 -m pytest tests``` to execute tests here  
 3. Run ```python3 application.py``` to start server  
-4. Open up view.html (for me it was located at Documents\GitHub\challenge\view.html) in a browser and have fun!  
+4. Open up view.html (for me it was located at Downloads\challenge-main\view.html) in a browser and have fun!  
 
 How to run E2E and unit tests from Command Prompt (make sure you have ```cd``` to project folder)
 1. Run ```python3 -m pytest tests```
