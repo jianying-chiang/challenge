@@ -5,7 +5,7 @@ Welcome to my application. This contains the ability to add, edit, and delete it
 # Guide (Windows/Mac)
 
 Pre-requisites:
-1. Feel free to download the project as a ZIP and extract it. (For cloning, run ```git clone https://github.com/jianying-chiang/challenge.git``` for Mac as it comes with git)  
+1. Feel free to clone/download the project as a ZIP and extract it. (For cloning, run ```git clone https://github.com/jianying-chiang/challenge.git``` for Mac as it comes with git)  
 2. Open up Command Prompt (CMD)  
 3. Navigate to project using ```cd``` command (i.e. ```cd Downloads\challenge-main```)  
 
@@ -25,3 +25,4 @@ How to run E2E and unit tests from Command Prompt (make sure you have ```cd``` t
 
 Notes:
 There are some instances where Command Prompt or the server may be unresponsive/stuck. Use CTRL-C to refresh and/or re-execute the command in the command prompt.
+Additionally, the set-up commands assume you dont have any alias
