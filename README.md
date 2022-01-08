@@ -3,21 +3,21 @@
 Welcome to my application. This contains the ability to add, edit, and delete items. Additionally, it has the ability to get a list of items, as well as export it to a local CSV file. Below are the backend structure and set-up guides.
 
 # Backend Structure:
-challenge-main
-│   application.py (App entry point)
-│   config.py (configuration for the app, i.e. db link)
-│
-└───application (main folder)
+challenge-main  
+│   application.py (App entry point)  
+│   config.py (configuration for the app, i.e. db link)  
+│  
+└───application (main folder)  
 │   │  
-│   └───api (Handles all incoming API requests)
-│   └───service (Handles all business/service logic)
-│   └───dao (Handles all DB-related operations/interactions)
-│   └───model (contains table schema, i.e. Item)
-│   └───util (Utility/Helper functions)
-└───tests
+│   └───api (Handles all incoming API requests)  
+│   └───service (Handles all business/service logic)  
+│   └───dao (Handles all DB-related operations/interactions)  
+│   └───model (contains table schema, i.e. Item)  
+│   └───util (Utility/Helper functions)  
+└───tests  
 │   │  
-│   └───e2e (End to End tests. Calls APIs with different params/JSONs)
-│   └───service (Unit tests. Checks that all utility/helper functions are working as expected)
+│   └───e2e (End to End tests. Calls APIs with different params/JSONs)  
+│   └───service (Unit tests. Checks that all utility/helper functions are working as expected)  
 
 # Guide (Windows/Mac)
 
