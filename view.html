@@ -2,12 +2,18 @@
 <html>
     <body>
 
-        <h1>Shopify Backend Challenge</h1>
-        <h3>Right-click HTML page, click inspect, then click on Console tab to see outputs/responses</h3>
-        <input id="getItemListInput" type="button" value="Get Item List" onclick="getItemList();" /><br>
-        <input id="exportCSVInput" type="button" value="Export Items to CSV" onclick="exportCSV();" /><br>
+        <h1>Shopify Backend Challenge</h1><br>
 
-        <h4>Add an Item (requires at least a name that is not empty/just spaces)</h4>
+        <h3>Before you start...</h3>
+        <p>
+            1. Right-click page<br>
+            2. Click inspect<br>
+            3. Select Console tab<br>
+            4. Try out the different features and use the Console to see output/responses!
+        </p>
+        <br><br><br>
+        <h4>CRUD Feature 1: Add an Item (requires a valid name)</h4>
+        <p>Use CRUD Feature 4 to see added item</p>
         <form action="javascript:addItem(document.getElementById('addName').value, document.getElementById('addDescription').value)">
             <label for="addName">Name:</label><br>
             <input type="text" id="addName" name="addName" value=""><br>
@@ -15,8 +21,9 @@
             <input type="text" id="addDescription" name="addDescription" value=""><br><br>
             <input type="submit" value="Submit">
         </form>
-
-        <h4>Edit an Item (requires an ID)</h4>
+        <br><br><br>
+        <h4>CRUD Feature 2: Edit an Item (requires an ID)</h4>
+        <p>Use CRUD Feature 4 to see reflected changes</p>
         <form action="javascript:updateItem(document.getElementById('updateId').value, document.getElementById('updateName').value, document.getElementById('updateDescription').value)">
             <label for="updateId">Item ID:</label><br>
             <input type="text" id="updateId" name="updateId" value=""><br>
@@ -26,14 +33,22 @@
             <input type="text" id="updateDescription" name="updateDescription" value=""><br><br>
             <input type="submit" value="Submit">
         </form> 
-
-        <h4>Delete an Item (requires an ID)</h4>
+        <br><br><br>
+        <h4>CRUD Feature 3: Delete an Item (requires an ID)</h4>
+        <p>Use CRUD Feature 4 to see reflected changes</p>
         <form action="javascript:deleteItem(document.getElementById('deleteId').value)">
             <label for="deleteId">Item ID:</label><br>
             <input type="text" id="deleteId" name="deleteId" value=""><br>
             <input type="submit" value="Submit">
         </form> 
-
+        <br><br><br>
+        <h4>CRUD Feature 4: Get an List of all Items</h4>
+        <p>In the console, you can expand the responses to see item details</p>
+        <input id="getItemListInput" type="button" value="Get Items" onclick="getItemList();" /><br>
+        <br><br><br>
+        <h4>Selected Feature: Export All Items to CSV file</h4>
+        <p>This will appear in challenge-main folder</p>
+        <input id="exportCSVInput" type="button" value="Export Items to CSV" onclick="exportCSV();" /><br>
     </body>
     <script type="text/javascript">
         var apiUrl = 'http://localhost:5000/v1/item';

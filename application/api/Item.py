@@ -15,11 +15,10 @@ def add_item():
     try:
         item_id = item_service.add_item(session=session, item=item_data)
         session.commit()
-        return jsonify({'message': 'Item {} created'.format(item_id)}), 201
+        return jsonify({'message': 'Item with ID {} was created'.format(item_id)}), 201
     except:
         session.rollback()
         return jsonify({'message': 'Something went wrong'}), 500
-        raise
     finally:
         session.close()
 
@@ -44,7 +43,7 @@ def update_item(item_id):
         return jsonify({'message': 'Item does not exists, therefore it cannot be updated'}), 404
     except:
         session.rollback()
-        raise
+        return jsonify({'message': 'Something went wrong'}), 500
     finally:
         session.close()
 
@@ -64,7 +63,7 @@ def delete_item(item_id):
         return jsonify({'message': 'Item does not exists, therefore it cannot be deleted'}), 404
     except:
         session.rollback()
-        raise
+        return jsonify({'message': 'Something went wrong'}), 500
     finally:
         session.close()
 
