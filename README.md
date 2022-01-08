@@ -11,7 +11,7 @@ Pre-requisites:
 
 How to Install Python from Command Prompt (make sure you have ```cd``` to project folder)  
 1.  Enter ```python3```. This will open Microsoft Store. Click 'Get' to download/install Python 3.9  
-2.  To verify that Python 3.9 has been installed, enter ```python3```  
+2.  To verify that Python 3.9 (other versions are valid as well) has been installed, enter ```python3```  
 3.  To exit python environment, enter ```exit()```  
 
 How to set up application from Command Prompt (make sure you have ```cd``` to project folder)  
