@@ -13,7 +13,7 @@ challenge-main
 │   └───service (Handles all business/service logic)  
 │   └───dao (Handles all DB-related operations/interactions)  
 │   └───model (contains table schema, i.e. Item)  
-│   └───util (Utility/Helper functions)
+│   └───util (Utility/Helper functions)  
 │  
 └───tests  
 │   │  
