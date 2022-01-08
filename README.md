@@ -7,7 +7,7 @@ challenge-main
 │   application.py (App entry point file)  
 │   config.py (configuration file for the app, i.e. db link)  
 │  
-└───application (main)
+└───application (main)  
 │   │  
 │   └───api (Handles all incoming API requests)  
 │   └───service (Handles all business/service logic)  
@@ -15,7 +15,7 @@ challenge-main
 │   └───model (contains table schema, i.e. Item)  
 │   └───util (Utility/Helper functions)
 │  
-└───tests
+└───tests  
 │   │  
 │   └───e2e (End to End tests. Calls APIs with different params/JSONs)  
 │   └───service (Unit tests. Checks that all utility/helper functions are working as expected)  
