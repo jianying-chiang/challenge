@@ -18,7 +18,7 @@ challenge-main
 └───tests  
 │   │  
 │   └───e2e (End to End tests. Calls APIs with different params/JSONs)  
-│   └───service (Unit tests. Checks that all utility/helper functions are working as expected)  
+│   └───unit (Unit tests. Checks that all utility/helper functions are working as expected)  
 
 # Guide (Windows/Mac)
 
